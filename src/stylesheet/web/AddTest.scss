@@ -1,0 +1,110 @@
+.AddTest{
+
+    .header{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 5px;
+        background-color: $bg-clr;
+        
+        .icon{
+            font-size: 14px;
+        }
+    }
+    .content{
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 30px 20px;
+
+       
+
+        form{
+            margin-top: 20px;
+
+            .form{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                background-color: $bg-clr;
+                padding: 20px;
+                border-radius: 15px;
+
+                &__row{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    label{
+                        color: #ccc;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    .help{
+                        font-weight: 300;
+                        font-size: 14px;
+
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+
+                    input{
+                        border: none;
+                        font-size: 18px;
+                        padding: 10px 0;
+                        color: white;
+                        transition: all 0.21s ease-in-out;
+                        background-color: transparent;
+                        border-bottom: 1px solid #ccc;
+
+                        &:hover{
+                            border-color: $primary;
+                        }
+
+                        &:focus{
+                            outline: none;
+                            border-color: $primary;
+                        }
+                    }
+
+                    textarea{
+                        background-color: transparent;
+                        border-radius: 20px;
+                        font-size: 18px;
+                        padding: 10px;
+                        color: white;
+                        transition: all 0.21s ease-in-out;
+                        &:hover{
+                            border-color: $primary;
+                        }
+                        &:focus{
+                            outline: none;
+                            border-color: $primary;
+                        }
+                    }
+                }
+            }
+
+            .button{
+                margin-top: 20px;
+                
+                .submit{
+                    background-color: $primary;
+                    border: none;
+                    font-family: 'Quicksand', sans-serif;
+                    color: $text-clr;
+                    font-size: 18px;
+                    width: max-content;
+                    padding: 10px 15px;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    transition: all 0.21s ease-in-out;
+
+
+                    &:hover{
+                        background-color: lighten($color: $primary, $amount: 20);
+                    }
+                }
+            }
+        }
+    }
+}

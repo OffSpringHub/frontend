@@ -1,0 +1,145 @@
+.QuestionManager{
+
+    .content{
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 30px 20px;
+
+        .title{
+            display: flex;
+            justify-content: space-between;
+
+            .action-buttons{
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    .skeleton{
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &__title{
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0D6EFD;
+        }
+
+        &__help{
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+
+
+    .Questions{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .question{
+            background-color: $bg-clr;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            transition: all .21s ease-in-out;
+            gap: 10px;
+            box-shadow: 0 0 5px rgba($color: $primary, $alpha: 0.2);
+
+
+            &:hover{
+                box-shadow: 0 0 5px rgba($color: $primary, $alpha: 0.9);
+            }
+
+            &__details{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__meta{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    
+
+                    &__category{
+                        padding: 5px;
+                        color: black;
+                        border-radius: 5px;
+                        background-color: lightblue;
+                    }
+
+                    .med{
+                        border-color: #FFC107;
+                        background-color: lighten($color: #FFC107, $amount: 40);
+                    }
+                    .easy{
+                        border-color: #198754;
+                        background-color: lighten($color: #198754, $amount: 40);
+                    }
+                    .hard{
+                        border-color: #AB2E3C;
+                        background-color: lighten($color: #AB2E3C, $amount: 40);
+                    }
+
+                    &__difficulty{
+                        border: 2px solid;
+                        padding: 5px;
+                        border-radius: 5px;
+                        color: black;
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+
+                    &__type{
+                        font-weight: 600;
+                        span{
+                            color: #ccc;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            &__question{
+                margin-left: 20px;
+                font-size: 20px;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+            &__options{
+                display: flex;
+                flex-direction: column;
+                margin-left: 40px;
+                gap: 10px;
+
+                .correct{
+                    background-color: lighten($color: $primary, $amount: 20);
+                    border-radius: 5px;
+                }
+
+                .option{
+                    display: flex;
+                    gap: 20px;
+                    padding: 10px;
+                    input{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+}

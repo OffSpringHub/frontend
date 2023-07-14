@@ -1,0 +1,117 @@
+.AddQuestion{
+
+    .content{
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 30px 20px;
+
+        .header{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .action{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .form{
+                background-color: $bg-clr;
+                padding: 25px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                &__row{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;         
+
+                    &__content{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        width: 70%;
+                    }
+
+                    &__action{
+                        display: flex;
+                        .category{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            background-color: transparent;
+                            border: 1px solid $primary;
+                            padding: 0 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: all .21s ease-in-out;
+
+                            &:hover{
+                                color: $primary;
+                            }
+                        }
+                    }
+
+                    &__answers{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .desc{
+                            font-size: 16px;
+                        }
+
+                        &__list{
+                            display: flex;
+                            margin-top: 20px;
+                            align-items: center;
+                            flex-direction: column;
+                            gap: 15px;
+                            padding: 0 50px;
+
+                            &__answer{
+                                display: flex;
+                                gap: 20px;
+
+                                
+
+                                &__action{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                    background-color: transparent;
+                                    border: 1px solid $primary;
+                                    padding: 10px 20px;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                    transition: all .21s ease-in-out;
+
+                                    &:hover{
+                                        color: $primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    }
+}
+
+.special{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
